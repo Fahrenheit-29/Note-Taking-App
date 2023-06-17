@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f8210108fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+    <div class="container">
+
+        <div class="note-taking-title">
+
+            <h1 class="text-center py-3"><i class="fa-solid fa-note-sticky"></i>NOTE TAKING APP</h1>
+        </div>
+
+
+
+
+
+
+        <div class="note-taking-content">
+
+            <div class="note-taking-header mb-4">
+
+                <h3 class="text">Create<span class="text sec-text"> Notes  <i class="fa-solid fa-pen"></i></span></h3>
+
+
+
+            </div>
+
+
+            <div class="row mb-3">
+                <label for="" class="col-sm-2 col-md-2 col-lg-2 col-form-label">Title:</label>
+
+                <div class="col-sm-10 col-md-10 col-lg-10 form-field">
+
+                    <input type="text" class="form-control" placeholder="Note Title" id="noteTitle">
+
+                </div>
+
+
+
+            </div>
+            <div class="row mb-3">
+                <label for="" class="col-sm-2 col-md-2 col-lg-2 col-form-label">Note:</label>
+
+                <div class="col-sm-10 col-md-10 col-lg-10 form-field">
+
+                    <textarea id="note" cols="30" rows="10" class="form-control"></textarea>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="float-end">
+
+                <button class="btn btn-dark d-block btnAdd" id="addBtn">Add Note <i class="fa-solid fa-plus"></i></button>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <div class="noteLayout">
+
+                <!-- <div class="col-notes my-3">
+
+                    <h3 class="titleNote"></h3>
+
+                    <p class="notes"></p>
+
+
+                    <div class="Btn-data my-3 text-center">
+                        <button class="btn btn-sm btn-dark" class="viewDetail">View Detail</button>
+                        <button class="btn btn-sm btn-danger" class="deleteBtn">Delete</button>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="col-notes my-3">
+
+                    <h3 class="titleNote"></h3>
+
+                    <p class="notes"></p>
+
+
+                    <div class="Btn-data my-3 text-center">
+                        <button class="btn btn-sm btn-dark" class="viewDetail">View Detail</button>
+                        <button class="btn btn-sm btn-danger" class="deleteBtn">Delete</button>
+                    </div>
+
+                </div> -->
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="modalView" id="modal">
+
+            <div class="modal-content">
+                <div class="">
+                    <span class="close">&times;</span>
+                </div>
+                <p class="noteContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, velit in. Atque earum illum quos deserunt qui, mollitia quaerat dolorum?</p>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

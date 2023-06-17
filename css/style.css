@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #aac8a7;
+}
+
+.note-taking-title {
+    margin: 50px 0px 40px;
+}
+
+.note-taking-title i {
+    margin-right: 10px;
+}
+
+
+/* text Typing */
+
+.note-taking-header i {
+    color: #f6ffde;
+}
+
+.text {
+    position: relative;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.sec-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #aac8a7;
+    border-left: 2px solid #F0EDD4;
+    animation: animate 3s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%,
+    60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.note-taking-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* form label */
+
+.col-form-label {
+    font-size: 1.089rem;
+    letter-spacing: 1px;
+}
+
+.form-field input[type=text],
+.form-field textarea:focus {
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: .9rem;
+}
+
+.btnAdd {
+    font-size: .9rem;
+}
+
+
+/* column notes */
+
+.col-notes {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+
+
+/* modal  for javascript function*/
+
+.modalView {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    width: 50%;
+    margin: 20% auto;
+    padding: 20px;
+}
+
+.modal-content p {
+    line-height: 2;
+    text-align: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    .noteLayout {
+        display: grid;
+        gap: 10px 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
