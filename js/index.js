@@ -27,14 +27,14 @@ let col;
 
 const saveNoteData = () => {
 
-    localStorage.setItem("data", noteLayout.innerHTML);
+    localStorage.setItem("noteData", noteLayout.innerHTML);
 
 
 }
 const getNoteData = () => {
 
 
-    noteLayout.innerHTML = localStorage.getItem("data");
+    noteLayout.innerHTML = localStorage.getItem("noteData");
 
 }
 
