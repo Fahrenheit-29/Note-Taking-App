@@ -25,13 +25,13 @@ let col;
 
 // use LocalStorage
 
-const saveData = () => {
+const saveNoteData = () => {
 
     localStorage.setItem("data", noteLayout.innerHTML);
 
 
 }
-const getData = () => {
+const getNoteData = () => {
 
 
     noteLayout.innerHTML = localStorage.getItem("data");
@@ -85,7 +85,7 @@ addNotesBtn.addEventListener('click', (e) => {
             }
 
         });
-        saveData();
+        saveNoteData();
 
 
         // clear input & textArea value
@@ -98,7 +98,7 @@ addNotesBtn.addEventListener('click', (e) => {
 
 //localstorage to get Data
 
-getData();
+getNoteData();
 
 // delete Note Data
 noteLayout.addEventListener("click", function(e) {
@@ -107,7 +107,7 @@ noteLayout.addEventListener("click", function(e) {
     if (e.target.innerText === "Delete") {
 
         e.target.parentElement.parentElement.remove();
-        saveData();
+        saveNoteData();
 
 
     }
